@@ -1,9 +1,12 @@
 
 def linear_search(list, target):
-    for i in range(0, len(list)):
-        if list[i] == target:
-            return i
-    return None
+    test = [i for i in range(0, len(list)) if list[i] == target]
+    # for i in range(0, len(list)):
+    #     if list[i] == target:
+    #         return i
+    if test == []:
+        return None
+    return test[0]
 
 def verify(Index):
     if Index is not None:
